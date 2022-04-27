@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dart 类的学习</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.b6bfb1ac.css" as="style"><link rel="preload" href="/blog/assets/js/app.edfba2ae.js" as="script"><link rel="preload" href="/blog/assets/js/2.6e98d853.js" as="script"><link rel="preload" href="/blog/assets/js/11.cd31a885.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.9b7102ce.js"><link rel="prefetch" href="/blog/assets/js/12.9e6ddefd.js"><link rel="prefetch" href="/blog/assets/js/13.3ae6795b.js"><link rel="prefetch" href="/blog/assets/js/14.c21b16e4.js"><link rel="prefetch" href="/blog/assets/js/15.44c66c11.js"><link rel="prefetch" href="/blog/assets/js/16.0a08d6c8.js"><link rel="prefetch" href="/blog/assets/js/3.8ee437fd.js"><link rel="prefetch" href="/blog/assets/js/4.bc7cf726.js"><link rel="prefetch" href="/blog/assets/js/5.d250cb53.js"><link rel="prefetch" href="/blog/assets/js/6.8779df89.js"><link rel="prefetch" href="/blog/assets/js/7.ed1d2405.js"><link rel="prefetch" href="/blog/assets/js/8.87cb8410.js"><link rel="prefetch" href="/blog/assets/js/9.0a57463a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.b6bfb1ac.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="dart-类的学习"><a href="#dart-类的学习" class="header-anchor">#</a> Dart 类的学习</h1> <h2 id="前置知识"><a href="#前置知识" class="header-anchor">#</a> 前置知识</h2> <p>首先记住两个概念</p> <ul><li><p>Dart 不支持 <code>函数重载</code></p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">void</span> <span class="token function">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token comment">// 报错 无法编译使用</span>
+<span class="token comment">// void func(String a) {}</span>
+</code></pre></div></li> <li><p>Dart 的类默认有一个隐形的参数为空的构造器函数</p> <p>类里面没有显写构造器函数时，默认有一个隐式的无参构造器函数，会调用父类的无参构造器函数</p> <div class="language-dart extra-class"><pre class="language-dart"><code>
+<span class="token keyword">class</span> <span class="token class-name">Dto</span> <span class="token punctuation">{</span>
+  <span class="token class-name">Dto</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 隐形的，如果不写，也是可以使用的 Dto()</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token class-name">Dto</span> a <span class="token operator">=</span> <span class="token class-name">Dto</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></li></ul> <h2 id="类的构造器"><a href="#类的构造器" class="header-anchor">#</a> 类的构造器</h2> <h3 id="命名构造器函数"><a href="#命名构造器函数" class="header-anchor">#</a> 命名构造器函数</h3> <p>构造器本身是一种函数，Dart 引入了<code>命名构造器函数</code>来解决一些需要重载构造的问题，注意使用<code>命名构造器函数</code>是也是一种构造函数。</p> <div class="language-dart extra-class"><pre class="language-dart"><code>
+<span class="token keyword">class</span> <span class="token class-name">Dto</span> <span class="token punctuation">{</span>
+ <span class="token comment">// Dto(); // 隐形的，如果不写，也是可以使用的 Dto()</span>
+
+  <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">def</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token keyword">dynamic</span><span class="token punctuation">&gt;</span></span> json<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 常见的json转model就是使用命名构造器函数</span>
+
+  <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">_action</span><span class="token punctuation">(</span>int a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">// Dto._action(int a, String b); // 同样无法重载</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Dto a = Dto(); // 命名构造器函数也是一种构造器函数，所以再使默认构造器函数将报错</span>
+  <span class="token class-name">Dto</span> b <span class="token operator">=</span> <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">def</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">Dto</span> model <span class="token operator">=</span> <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;xxx&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="factory-工厂构造函数"><a href="#factory-工厂构造函数" class="header-anchor">#</a> <code>factory</code> 工厂构造函数</h3> <p>用于单例模式</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Singleton</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Singleton</span> _singleton <span class="token operator">=</span> <span class="token class-name">Singleton</span><span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">Singleton</span><span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">factory</span> <span class="token class-name">Singleton</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> _singleton<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>用于单例模式的多实例缓存</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">SingletonDto</span> <span class="token punctuation">{</span>
+  <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">SingletonDto</span><span class="token punctuation">&gt;</span></span> _cache <span class="token operator">=</span> <span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">SingletonDto</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token class-name">SingletonDto</span><span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span><span class="token class-name">String</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">factory</span> <span class="token class-name">SingletonDto</span><span class="token punctuation">(</span><span class="token class-name">String</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> _cache<span class="token punctuation">.</span><span class="token function">putIfAbsent</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token class-name">SingletonDto</span><span class="token punctuation">.</span><span class="token function">_internal</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>用于抽象类构造生成子类实例</p> <p>参考 flutter 中<code>Key</code>抽象类和<code>ValueKey</code>类</p> <h2 id="类的成员变量"><a href="#类的成员变量" class="header-anchor">#</a> 类的成员变量</h2> <h3 id="静态变量"><a href="#静态变量" class="header-anchor">#</a> 静态变量</h3> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Dto</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 静态变量可随时修改</span>
+  <span class="token keyword">static</span> <span class="token class-name">String</span> TYPE1 <span class="token operator">=</span> <span class="token string-literal"><span class="token string">&quot;aaa&quot;</span></span><span class="token punctuation">;</span>
+  <span class="token comment">// 静态变量无法修改</span>
+  <span class="token keyword">static</span> <span class="token keyword">const</span> <span class="token class-name">String</span> TYPE2 <span class="token operator">=</span> <span class="token string-literal"><span class="token string">&quot;bbb&quot;</span></span><span class="token punctuation">;</span>
+  <span class="token comment">// 静态变量生成后无法修改</span>
+  <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token class-name">String</span> TYPE3 <span class="token operator">=</span> <span class="token function">_func</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">&quot;ccc&quot;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">_func</span><span class="token punctuation">(</span>args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> args<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="实例变量"><a href="#实例变量" class="header-anchor">#</a> 实例变量</h3> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Dto</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 实例变量常见有这四种申明,各有好处</span>
+  <span class="token class-name">String</span> id<span class="token punctuation">;</span> <span class="token comment">// must be initialized</span>
+  <span class="token keyword">final</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span> <span class="token comment">// must be initialized</span>
+  <span class="token class-name">String</span><span class="token operator">?</span> age<span class="token punctuation">;</span>
+  late <span class="token class-name">String</span> address<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="解决-must-be-initialized-初始化实例变量"><a href="#解决-must-be-initialized-初始化实例变量" class="header-anchor">#</a> 解决 must be initialized 初始化实例变量</h4> <p>方法同样适合<code>final</code>修饰的实例变量</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token comment">// 在声明时初始化实例变量</span>
+<span class="token keyword">class</span> <span class="token class-name">DtoA</span> <span class="token punctuation">{</span>
+  <span class="token class-name">String</span> id <span class="token operator">=</span> <span class="token string-literal"><span class="token string">&quot;111&quot;</span></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 在构造函数时初始化实例变量</span>
+<span class="token keyword">class</span> <span class="token class-name">DtoB</span> <span class="token punctuation">{</span>
+  <span class="token class-name">String</span> id<span class="token punctuation">;</span>
+  <span class="token class-name">DtoB</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token class-name">DtoB</span><span class="token punctuation">.</span><span class="token function">ins</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 在初始化列表时初始化实例变量</span>
+<span class="token keyword">class</span> <span class="token class-name">DtoC</span> <span class="token punctuation">{</span>
+  <span class="token class-name">String</span> id<span class="token punctuation">;</span>
+  <span class="token class-name">DtoC</span><span class="token punctuation">(</span><span class="token punctuation">{</span>required <span class="token class-name">String</span> args<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> id <span class="token operator">=</span> args<span class="token punctuation">;</span>
+  <span class="token class-name">DtoC</span><span class="token punctuation">.</span><span class="token function">ins</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">)</span> <span class="token punctuation">:</span> id <span class="token operator">=</span> args<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>其他综合实例运用</p> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token keyword">class</span> <span class="token class-name">Dto</span> <span class="token punctuation">{</span>
+  <span class="token keyword">final</span> <span class="token class-name">String</span> id<span class="token punctuation">;</span> <span class="token comment">// must be initialized</span>
+  <span class="token keyword">final</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span> <span class="token comment">// must be initialized</span>
+
+  <span class="token class-name">Dto</span><span class="token punctuation">(</span><span class="token punctuation">{</span>required <span class="token keyword">this</span><span class="token punctuation">.</span>id<span class="token punctuation">,</span> required <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">fromJson</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token keyword">dynamic</span><span class="token punctuation">&gt;</span></span> json<span class="token punctuation">)</span>
+      <span class="token punctuation">:</span> <span class="token keyword">assert</span><span class="token punctuation">(</span>json<span class="token punctuation">.</span>isNotEmpty<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token keyword">assert</span><span class="token punctuation">(</span>json<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'id'</span></span><span class="token punctuation">]</span><span class="token punctuation">.</span>isNotEmpty<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        id <span class="token operator">=</span> json<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'id'</span></span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        name <span class="token operator">=</span> json<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">'name'</span></span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token class-name">Dto</span><span class="token punctuation">.</span><span class="token function">fromRaw</span><span class="token punctuation">(</span><span class="token class-name">String</span> raw<span class="token punctuation">)</span>
+      <span class="token punctuation">:</span> <span class="token keyword">assert</span><span class="token punctuation">(</span>raw<span class="token punctuation">.</span>isNotEmpty<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        id <span class="token operator">=</span> <span class="token function">_jsonId</span><span class="token punctuation">(</span>raw<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        name <span class="token operator">=</span> <span class="token function">_jsonName</span><span class="token punctuation">(</span>raw<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">_jsonId</span><span class="token punctuation">(</span><span class="token class-name">String</span> raw<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">jsonDecode</span><span class="token punctuation">(</span>raw<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;id&quot;</span></span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">_jsonName</span><span class="token punctuation">(</span><span class="token class-name">String</span> raw<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">jsonDecode</span><span class="token punctuation">(</span>raw<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token string-literal"><span class="token string">&quot;name&quot;</span></span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.edfba2ae.js" defer></script><script src="/blog/assets/js/2.6e98d853.js" defer></script><script src="/blog/assets/js/11.cd31a885.js" defer></script>
+  </body>
+</html>
