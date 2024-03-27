@@ -1,0 +1,1 @@
+import{_ as s,c as i,o as a,a2 as n}from"./chunks/framework.BvpWiaHw.js";const o=JSON.parse('{"title":"Mac电脑设置","description":"","frontmatter":{},"headers":[],"relativePath":"ios/init.md","filePath":"ios/init.md"}'),l={name:"ios/init.md"},p=n("",8),h=[p];function e(t,k,r,d,F,c){return a(),i("div",null,h)}const E=s(l,[["render",e]]);export{o as __pageData,E as default};
