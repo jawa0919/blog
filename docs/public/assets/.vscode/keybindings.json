@@ -1,0 +1,10 @@
+[
+    {
+        "key": "ctrl+alt+1",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "name": "add file header"
+        }
+    }
+]
