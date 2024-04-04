@@ -1,0 +1,33 @@
+{
+    "recommendations": [
+        "christian-kohler.npm-intellisense",
+        "humao.rest-client",
+        "gruntfuggly.todo-tree",
+        "ecmel.vscode-html-css",
+        "usernamehw.errorlens",
+        "wmaurer.change-case",
+        "dbaeumer.vscode-eslint",
+        "pflannery.vscode-versionlens",
+        "zignd.html-css-class-completion",
+        "ritwickdey.liveserver",
+        "codeinchinese.englishchinesedictionary",
+        "ms-vscode.powershell",
+        "redhat.vscode-xml",
+        "streetsidesoftware.code-spell-checker",
+        "xyz.local-history",
+        "ionutvmi.path-autocomplete",
+        "intellsmi.comment-translate",
+        "wix.vscode-import-cost",
+        "jawa0919.adb-helper",
+        "ms-ceintl.vscode-language-pack-zh-hans",
+        "esbenp.prettier-vscode",
+        "vscjava.vscode-gradle",
+        "vue.volar",
+        "redjue.git-commit-plugin",
+        "vscode-icons-team.vscode-icons",
+        "dart-code.flutter",
+        "dart-code.dart-code",
+        "maattdd.gitless",
+        "mhutchie.git-graph"
+    ]
+}
