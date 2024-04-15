@@ -42,7 +42,7 @@ flutter build ios
 
 $Env:http_proxy="http://127.0.0.1:10809";$Env:https_proxy="http://127.0.0.1:10809"
 flutter pub publish --dry-run -v
-flutter pub publish --server=https://pub.dartlang.org -v
+flutter pub publish --server=https://pub.dev -v
 ```
 
 ## windows11
