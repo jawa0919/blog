@@ -40,6 +40,9 @@ flutter build apk --flavor uat -t lib/main_uat.dart --target-platform android-ar
 pod install --no-repo-update
 flutter build ios
 
+flutter build aar
+flutter build ios-framework
+
 $Env:http_proxy="http://127.0.0.1:10809";$Env:https_proxy="http://127.0.0.1:10809"
 flutter pub publish --dry-run -v
 flutter pub publish --server=https://pub.dev -v
