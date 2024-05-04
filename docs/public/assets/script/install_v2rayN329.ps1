@@ -80,26 +80,26 @@ Write-Host "appDataFolder:$appDataFolder" -ForegroundColor Green
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $githubDownload = "https://github.com"
 $repoUser = "2dust"
-$repoName = "v2rayN"
+$repoName = "v2rayN329"
 ########################################################################################################################
-$latestInfoUrl = "https://api.github.com/repos/$repoUser/$repoName/releases/latest"
-Write-Host "load latestVersionInfo form '$latestInfoUrl'" -ForegroundColor Green
+# $latestInfoUrl = "https://api.github.com/repos/$repoUser/$repoName/releases/latest"
+# Write-Host "load latestVersionInfo form '$latestInfoUrl'" -ForegroundColor Green
 ########################################################################################################################
-$latestInfo = Invoke-WebRequest $latestInfoUrl -UseBasicParsing
-$latestInfoJson = $latestInfo.Content | ConvertFrom-Json
-$version = $latestInfoJson.tag_name
-Write-Host "lastVersion:$version" -ForegroundColor Green
+# $latestInfo = Invoke-WebRequest $latestInfoUrl -UseBasicParsing
+# $latestInfoJson = $latestInfo.Content | ConvertFrom-Json
+# $version = $latestInfoJson.tag_name
+# Write-Host "lastVersion:$version" -ForegroundColor Green
 ########################################################################################################################
 if ('' -ne $githubDownloadProxy) {
     $githubDownload = $githubDownloadProxy
 }
-Write-Host "Download $repoUser-$repoName-$version from $githubDownload" -ForegroundColor Green
+# Write-Host "Download $repoUser-$repoName-$version from $githubDownload" -ForegroundColor Green
 ########################################################################################################################
-$releasesFlieName = "zz_v2rayN-With-Core-SelfContained"
-$releasesFlieNameType = "7z"
+# $releasesFlieName = "zz_v2rayN-With-Core-SelfContained"
+# $releasesFlieNameType = "7z"
 ########################################################################################################################
-Write-Host "releasesFlie:$releasesFlieName.$releasesFlieNameType" -ForegroundColor Green
-$archiveUrl = "$githubDownload/$repoUser/$repoName/releases/download/$version/$releasesFlieName.$releasesFlieNameType"
+# Write-Host "releasesFlie:$releasesFlieName.$releasesFlieNameType" -ForegroundColor Green
+$archiveUrl = "$githubDownload/$repoUser/v2rayN/releases/download/3.29/v2rayN-Core.zip"
 Write-Host "archiveUrl: '$archiveUrl'" -ForegroundColor Green
 ########################################################################################################################
 Write-Host "Downloading..." -ForegroundColor Green
