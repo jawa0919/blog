@@ -10,7 +10,7 @@ $USP = [Environment]::GetEnvironmentVariable('USERPROFILE')
 # # Flutter
 # [Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://mirrors.tuna.tsinghua.edu.cn/dart-pub" , 'User')
 # [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://mirrors.tuna.tsinghua.edu.cn/flutter" , 'User')
-[Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://pub.flutter-io.cn" , 'User')
+[Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://pub-web.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://storage.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_ROOT', $USP + "\sdk\flutter3_19_6" , 'User')
 [Environment]::SetEnvironmentVariable('PUB_CACHE', $USP + "\sdk\.pub-cache" , 'User')
