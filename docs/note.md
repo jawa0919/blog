@@ -8,6 +8,7 @@ get-ExecutionPolicy
 
 pnpm --version
 pnpm env use --global lts
+pnpm env use --global 20
 pnpm env use --global 18
 node --version
 npm --version
@@ -20,11 +21,11 @@ pnpm i yo generator-code vsce -g
 
 ```shell
 flutter doctor -v
-flutter create --offline --platforms android,ios app
-flutter create --offline -t plugin --platforms android,ios plg
-flutter create --offline -t package pkg
-flutter create --offline -t module mod
-flutter create --org com.example --offline -t plugin --platforms android,ios -a java -i objc plg
+flutter create --platforms android,ios app
+flutter create -t plugin --platforms android,ios plg
+flutter create -t package pkg
+flutter create -t module mod
+flutter create --org top.wj0919 -t plugin --platforms android,ios -a java -i objc plg
 
 flutter clean
 flutter run --release
