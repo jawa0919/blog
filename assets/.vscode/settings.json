@@ -97,6 +97,7 @@
     "cSpell.allowCompoundWords": true,
     "cSpell.userWords": [
         "ARGB",
+        "cupertino",
         "eruda",
         "flavorizr",
         "gitee",
@@ -105,8 +106,12 @@
         "Pinia",
         "pnpm",
         "scrcpy",
+        "unfocus",
         "vant",
-        "vite"
+        "vite",
+        "vsync",
+        "wangjia",
+        "writeln"
     ],
     "[dart]": {
         "editor.formatOnSave": true,
@@ -123,14 +128,17 @@
     "dart.flutterCreatePlatforms": [
         "android",
         "ios",
-        "web"
     ],
     "versionlens.pub.apiUrl": "https://pub-web.flutter-io.cn/api/packages",
     "liveServer.settings.useLocalIp": true,
+    "GitCommitPlugin.ShowEmoji": false,
     "commentTranslate.targetLanguage": "zh-CN",
+    "dart.runPubGetOnPubspecChanges": "never",
     "dart.flutterSdkPaths": [
-        "C:\\Users\\admin\\sdk\\flutter3_0_0",
-        "C:\\Users\\admin\\sdk\\flutter3_10_0",
-        "C:\\Users\\admin\\sdk\\flutter3_13_9"
-    ]
+        "C:\\Users\\admin\\sdk\\flutter3_19_6",
+        "C:\\Users\\admin\\sdk\\flutter3_10_6",
+        "C:\\Users\\admin\\sdk\\flutter3_0_5",
+        "C:\\Users\\admin\\sdk\\flutter2_2_3",
+        "C:\\Users\\admin\\sdk\\flutter2_0_6",
+    ],
 }
