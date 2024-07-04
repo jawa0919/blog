@@ -8,11 +8,11 @@
 
 allprojects {
     repositories {
-        maven { setUrl("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/") }
         maven { setUrl("https://maven.aliyun.com/repository/public/") }
         maven { setUrl("https://maven.aliyun.com/repository/google/") }
         maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
         maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+        maven { setUrl("https://developer.huawei.com/repo/") }
     }
     buildscript {
         repositories.all { repo ->
@@ -25,11 +25,11 @@ allprojects {
             }
         }
         repositories {
-            maven { setUrl("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/") }
             maven { setUrl("https://maven.aliyun.com/repository/public/") }
             maven { setUrl("https://maven.aliyun.com/repository/google/") }
             maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
             maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+            maven { setUrl("https://developer.huawei.com/repo/") }
         }
     }
 }
@@ -43,7 +43,6 @@ allprojects {
 //             connect.connect()
 //             def code = connect.getResponseCode()
 //             if (code == 200) {
-//                 maven { setUrl("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/") }
 //                 maven { setUrl("https://maven.aliyun.com/repository/public/") }
 //                 maven { setUrl("https://maven.aliyun.com/repository/google/") }
 //                 maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
@@ -54,7 +53,6 @@ allprojects {
 //             maven { setUrl("https://maven.paic.com.cn/repository/maven-public/") }
 //             maven { setUrl("https://maven.paic.com.cn/repository/google/") }
 //             maven { setUrl("https://maven.paic.com.cn/repository/aliyun-gradle-plugin/") }
-//             maven { setUrl("https://maven.paic.com.cn/repository/mirror-tencent/") }
 //             maven { setUrl("https://maven.paic.com.cn/repository/storage-flutter-io/") }
 //             maven { setUrl("https://maven.paic.com.cn/repository/huawei/") }
 //         }
@@ -77,7 +75,6 @@ allprojects {
 //                 connect.connect()
 //                 def code = connect.getResponseCode()
 //                 if (code == 200) {
-//                     maven { setUrl("https://mirrors.cloud.tencent.com/nexus/repository/maven-public/") }
 //                     maven { setUrl("https://maven.aliyun.com/repository/public/") }
 //                     maven { setUrl("https://maven.aliyun.com/repository/google/") }
 //                     maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
@@ -88,7 +85,6 @@ allprojects {
 //                 maven { setUrl("https://maven.paic.com.cn/repository/maven-public/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/google/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/aliyun-gradle-plugin/") }
-//                 maven { setUrl("https://maven.paic.com.cn/repository/mirror-tencent/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/storage-flutter-io/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/huawei/") }
 //             }
