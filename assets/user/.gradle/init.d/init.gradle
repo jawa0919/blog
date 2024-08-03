@@ -12,6 +12,7 @@ allprojects {
         maven { setUrl("https://maven.aliyun.com/repository/google/") }
         maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
         maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+        maven { setUrl("https://dl.google.com/dl/android/maven2/") }
         maven { setUrl("https://developer.huawei.com/repo/") }
     }
     buildscript {
@@ -29,6 +30,7 @@ allprojects {
             maven { setUrl("https://maven.aliyun.com/repository/google/") }
             maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
             maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+            maven { setUrl("https://dl.google.com/dl/android/maven2/") }
             maven { setUrl("https://developer.huawei.com/repo/") }
         }
     }
@@ -47,6 +49,7 @@ allprojects {
 //                 maven { setUrl("https://maven.aliyun.com/repository/google/") }
 //                 maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
 //                 maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+//                 maven { setUrl("https://dl.google.com/dl/android/maven2/") }
 //                 maven { setUrl("https://developer.huawei.com/repo/") }
 //             }
 //         } catch (Exception e) {
@@ -79,6 +82,7 @@ allprojects {
 //                     maven { setUrl("https://maven.aliyun.com/repository/google/") }
 //                     maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
 //                     maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+//                     maven { setUrl("https://dl.google.com/dl/android/maven2/") }
 //                     maven { setUrl("https://developer.huawei.com/repo/") }
 //                 }
 //             } catch (Exception e) {
@@ -86,6 +90,7 @@ allprojects {
 //                 maven { setUrl("https://maven.paic.com.cn/repository/google/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/aliyun-gradle-plugin/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/storage-flutter-io/") }
+//                 maven { setUrl("https://dl.google.com/dl/android/maven2/") }
 //                 maven { setUrl("https://maven.paic.com.cn/repository/huawei/") }
 //             }
 //         }
