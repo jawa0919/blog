@@ -21,6 +21,7 @@ allprojects {
             if (!displayName.contains("https:") && !displayName.contains("http:") && !displayName.contains("file:")) {
                 // println "init.gradle-buildscript remove repo (${displayName})"
                 // repositories.remove(repo)
+                println "init.gradle-buildscript init repo (${displayName})"
             } else {
                 println "init.gradle-buildscript init repo (${displayName})"
             }
