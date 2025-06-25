@@ -12,7 +12,7 @@ $USP = [Environment]::GetEnvironmentVariable('USERPROFILE')
 # [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://mirrors.tuna.tsinghua.edu.cn/flutter" , 'User')
 [Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://pub-web.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://storage.flutter-io.cn" , 'User')
-[Environment]::SetEnvironmentVariable('FLUTTER_ROOT', $USP + "\sdk\flutter3_19_6" , 'User')
+[Environment]::SetEnvironmentVariable('FLUTTER_ROOT', $USP + "\sdk\flutter3_22_3" , 'User')
 [Environment]::SetEnvironmentVariable('PUB_CACHE', $USP + "\sdk\.pub-cache" , 'User')
 
 $sdk_path = "%JAVA_HOME%\bin;%ANDROID_SDK_ROOT%\tools;%ANDROID_SDK_ROOT%\platform-tools;%FLUTTER_ROOT%\bin;%PUB_CACHE%\bin"
