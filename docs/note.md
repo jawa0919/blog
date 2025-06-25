@@ -7,10 +7,10 @@ set-ExecutionPolicy RemoteSigned
 get-ExecutionPolicy
 
 pnpm --version
-pnpm env use --global 14
+pnpm env use --global 18
 node --version
 npm --version
-npm install -g @pnpm/exe@7.33.7
+npm install -g @pnpm/exe@9
 npm outdated -g
 npm install -g @vue/cli@latest
 npm install -g vite@latest
@@ -29,8 +29,8 @@ flutter create --platforms android,ios app
 flutter create -t plugin --platforms android,ios plg
 flutter create -t package pkg
 flutter create -t module mod
-flutter create --org top.wj0919 -t plugin --platforms android,ios -a java -i objc plg
-flutter create --org top.wiz --platforms android,ios flutter_wiz_app
+flutter create --org top.wiz -t plugin --platforms android,ios -a java -i objc plg
+flutter create --org top.wiz --platforms android,ios app
 
 flutter clean
 flutter run --release
@@ -91,3 +91,11 @@ slmgr /ato
 ## chrome 浏览器下载
 
 chrome 最新完整离线版 [chrome 下载页](https://www.google.cn/chrome/?standalone=1&platform=win64)
+
+## VC 代理
+
+```
+https://fastly.jsdelivr.net/gh/ermaozi/get_subscribe@main/subscribe/clash.yml
+
+https://fastly.jsdelivr.net/gh/zhangkaiitugithub/passcro@main/speednodes.yaml
+```
