@@ -117,7 +117,7 @@
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
         "editor.rulers": [
-            80
+            120
         ],
         "editor.selectionHighlight": false,
         "editor.suggest.snippetsPreventQuickSuggestions": false,
@@ -135,8 +135,9 @@
     "commentTranslate.targetLanguage": "zh-CN",
     "dart.runPubGetOnPubspecChanges": "never",
     "dart.flutterSdkPaths": [
+        "C:\\Users\\admin\\sdk\\flutter3_27_4",
         "C:\\Users\\admin\\sdk\\flutter3_22_3",
-        "C:\\Users\\admin\\sdk\\flutter3_19_6",
+        "C:\\Users\\admin\\sdk\\flutter3_10_6",
         "C:\\Users\\admin\\sdk\\flutter3_7_12",
     ],
 }
