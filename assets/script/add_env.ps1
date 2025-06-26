@@ -19,7 +19,6 @@ $sdk_path = "%JAVA_HOME%\bin;%ANDROID_SDK_ROOT%\tools;%ANDROID_SDK_ROOT%\platfor
 $oldUserPath = (Get-Item -Path "HKCU:\Environment").GetValue("PATH", "", [Microsoft.Win32.RegistryValueOptions]::DoNotExpandEnvironmentNames)
 if ($oldUserPath.EndsWith(";")) {
   [Environment]::SetEnvironmentVariable('PATH', $oldUserPath + $sdk_path , 'User')
-}
-else {
+} else {
   [Environment]::SetEnvironmentVariable('PATH', $oldUserPath + ';' + $sdk_path, 'User')
 }
