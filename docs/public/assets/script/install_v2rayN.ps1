@@ -8,7 +8,7 @@ $ProgressPreference = 'SilentlyContinue'
 # 设置代理
 # $githubDownloadProxy = ""
 # $githubDownloadProxy = "https://mirror.ghproxy.com/https://github.com"
-$githubDownloadProxy = "https://slink.ltd/https://github.com"
+$githubDownloadProxy = "https://wget.la/https://github.com"
 ########################################################################################################################
 $platform = $null
 $architecture = $null
@@ -95,8 +95,8 @@ if ('' -ne $githubDownloadProxy) {
 }
 Write-Host "Download $repoUser-$repoName-$version from $githubDownload" -ForegroundColor Green
 ########################################################################################################################
-$releasesFileName = "zz_v2rayN-With-Core-SelfContained"
-$releasesFileNameType = "7z"
+$releasesFileName = "v2rayN-windows-64-desktop"
+$releasesFileNameType = "zip"
 ########################################################################################################################
 Write-Host "releasesFile:$releasesFileName.$releasesFileNameType" -ForegroundColor Green
 $archiveUrl = "$githubDownload/$repoUser/$repoName/releases/download/$version/$releasesFileName.$releasesFileNameType"

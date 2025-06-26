@@ -22,10 +22,10 @@ export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"
 # android end
 # flutter
-export FLUTTER_ROOT="$HOME/sdk/flutter3_22_3"
+export FLUTTER_ROOT="$HOME/Flutter/flutter3_22_3"
 export PUB_HOSTED_URL="https://pub-web.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
-export PUB_CACHE="$HOME/sdk/.pub_cache"
+export PUB_CACHE="$HOME/Flutter/.pub_cache"
 export PATH="$PATH:$FLUTTER_ROOT/bin:$PUB_CACHE/bin"
 # flutter end
 # pnpm
