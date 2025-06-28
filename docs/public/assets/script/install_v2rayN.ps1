@@ -8,7 +8,8 @@ $ProgressPreference = 'SilentlyContinue'
 # 设置代理
 # $githubDownloadProxy = ""
 # $githubDownloadProxy = "https://mirror.ghproxy.com/https://github.com"
-$githubDownloadProxy = "https://wget.la/https://github.com"
+$githubDownloadProxy = "https://ghproxy.1888866.xyz/https://github.com"
+# $githubDownloadProxy = "https://wget.la/https://github.com"
 ########################################################################################################################
 $platform = $null
 $architecture = $null

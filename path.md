@@ -6,6 +6,12 @@
 
 [ssh-id_rsa](./../.ssh/id_rsa)
 
+[ssh-config](./../.ssh/config)
+
+[ssh-config_clash](./../.ssh/config_clash)
+
+[ssh-config_v2ray](./../.ssh/config_v2ray)
+
 [git-gitconfig](./../.gitconfig)
 
 [npm-npmrc](./../.npmrc)
@@ -26,9 +32,9 @@
 
 ## Windows
 
-[hosts](./../../../Windows/System32/drivers/etc/hosts)
-
 [ConsoleHost_history.txt](./../AppData/Roaming/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt)
+
+[hosts](./../../../Windows/System32/drivers/etc/hosts)
 
 [dart-pub-credentials.json](./../AppData/Roaming/dart/pub-credentials.json)
 
