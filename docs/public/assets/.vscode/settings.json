@@ -1,0 +1,120 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "search.exclude": {
+        "**/.git": true,
+        "**/.github": true,
+        "**/.history": true,
+        "**/.nuxt": true,
+        "**/.output": true,
+        "**/.pnpm": true,
+        "**/.vscode": true,
+        "**/.yarn": true,
+        "**/bower_components": true,
+        "**/dist/**": true,
+        "**/logs": true,
+        "**/node_modules": true,
+        "**/out/**": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/tmp": true,
+        "**/yarn.lock": true
+    },
+    "editor.rulers": [
+        80,
+        100,
+        120,
+        150,
+        180,
+        200
+    ],
+    "editor.minimap.maxColumn": 60,
+    "editor.guides.bracketPairs": true,
+    "editor.linkedEditing": true,
+    "editor.unicodeHighlight.allowedLocales": {
+        "zh-hans": true,
+        "zh-hant": true
+    },
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "*.dart": "$(capture).freezed.dart, $(capture).g.dart",
+        "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
+        "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx",
+        "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+        "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+        "pubspec.yaml": ".metadata, analysis_options.yaml, pubspec.lock",
+        ".env": "*.env, .env.*, .envrc, env.d.ts",
+        ".env.development": "*.env, .env.*, .envrc, env.d.ts",
+        ".flutter-plugins": ".flutter-plugins-dependencies",
+        "main.dart": "main_*.dart"
+    },
+    "files.eol": "\n",
+    "files.associations": {
+        "*.svg": "html",
+        "pages.json": "jsonc",
+        "manifest.json": "jsonc",
+        "*.arb": "json",
+        "*.config.json": "jsonc",
+        "*Config.json": "jsonc"
+    },
+    "cSpell.allowCompoundWords": true,
+    "cSpell.userWords": [
+        "ARGB",
+        "Cupertino",
+        "Encrypter",
+        "eruda",
+        "flavorizr",
+        "gitee",
+        "jawa",
+        "LTRB",
+        "Pinia",
+        "pnpm",
+        "scrcpy",
+        "swiper",
+        "vant",
+        "vite",
+        "vsync",
+        "writeln"
+    ],
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "dart.flutterSdkPaths": [
+        "~/sdk/flutter3_22_3",
+        "~/sdk/flutter3_19_6",
+        "~/sdk/flutter3_7_12",
+        "~/sdk/flutter2_10_5",
+        "~/sdk/flutter2_2_3"
+    ],
+    "dart.runPubGetOnPubspecChanges": "never",
+    "path-autocomplete.pathMappings": {
+        "@": "${workspace}/src"
+    },
+    "rest-client.previewOption": "exchange",
+    "versionlens.pub.apiUrl": "https://pub-web.flutter-io.cn/api/packages",
+    "GitCommitPlugin.ShowEmoji": false,
+    "git.confirmSync": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.useLocalIp": true,
+}
