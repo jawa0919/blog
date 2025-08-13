@@ -14,22 +14,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
-
-      - name: Setup Node
+      - name: Setup Nodejs
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: Build VitePress
-        run: pnpm docs:build
+        run: npm docs:build
 
         # repos setting
         # Setting-Actions-General
