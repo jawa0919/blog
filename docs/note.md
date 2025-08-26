@@ -20,6 +20,7 @@ npm install -g typescript@latest
 ## flutter shell
 
 ```shell
+ssh-keygen -t rsa -C 'jawa0919@163.com'
 flutter doctor -v
 flutter create --platforms android,ios app
 flutter create -t plugin --platforms android,ios plg
