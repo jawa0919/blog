@@ -26,8 +26,8 @@ flutter create --platforms android,ios app
 flutter create -t plugin --platforms android,ios plg
 flutter create -t package pkg
 flutter create -t module mod
-flutter create --org top.wj0919 -t plugin --platforms android,ios -a java -i objc plg
-flutter create --org top.wiz --platforms android,ios flutter_wiz_app
+flutter create --org top.men6jia -t plugin --platforms android,ios -a java -i objc plg
+flutter create --org top.men6jia --platforms android,ios app
 
 flutter clean
 flutter run --release
