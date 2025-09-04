@@ -94,8 +94,6 @@ esac
    gem --version
    # Ruby换源-清华源
    gem sources --add https://mirrors.tuna.tsinghua.edu.cn/rubygems/ --remove https://rubygems.org/
-   # Ruby换源-腾讯源
-   gem sources --add https://cloud.tencent.com/rubygems/ --remove https://rubygems.org/
    # 检查换源
    gem sources -l
    # 检查升级
@@ -128,10 +126,9 @@ esac
    pod repo remove master
    # Specs换源-清华源/腾讯源-选一个
    git clone https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git master
-   git clone https://cloud.tencent.com/CocoaPods/Specs.git master
    ```
 
-   然后在 `PodFile` 第一行加上`source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'`或者`source 'https://cloud.tencent.com/CocoaPods/Specs.git'`
+   然后在 `PodFile` 第一行加上`source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'`
 
    这个克隆的过程比较长。
 
