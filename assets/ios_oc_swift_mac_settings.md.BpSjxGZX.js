@@ -60,8 +60,8 @@ import{_ as i,c as a,o as n,ae as l}from"./chunks/framework.Bglz0IlG.js";const c
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 要替换的字符串</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">OLD_STRING</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;&quot;: &quot;https://github.com/&#39;</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 替换成的新字符串</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># NEW_STRING=&#39;&quot;: &quot;https://githubfast.com/&#39;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">NEW_STRING</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;&quot;: &quot;https://ghproxy.net/https://github.com/&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">NEW_STRING</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;&quot;: &quot;https://githubfast.com/&#39;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># NEW_STRING=&#39;&quot;: &quot;https://ghproxy.net/https://github.com/&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># 第一步：查找所有需要替换的文件并打印它们的路径</span></span>
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">echo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &quot;Searching for .podspec.json files under </span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">$DIRECTORY</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">...&quot;</span></span>

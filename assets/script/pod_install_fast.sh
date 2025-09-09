@@ -6,8 +6,8 @@ DIRECTORY="$HOME/.cocoapods/repos/trunk/Specs"
 # 要替换的字符串
 OLD_STRING='": "https://github.com/'
 # 替换成的新字符串
-# NEW_STRING='": "https://githubfast.com/'
-NEW_STRING='": "https://ghproxy.net/https://github.com/'
+NEW_STRING='": "https://githubfast.com/'
+# NEW_STRING='": "https://ghproxy.net/https://github.com/'
 
 # 第一步：查找所有需要替换的文件并打印它们的路径
 echo "Searching for .podspec.json files under $DIRECTORY..."
