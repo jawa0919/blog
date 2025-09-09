@@ -84,17 +84,17 @@ download_and_install() {
   local platform arch version_json version archive_url tmp_dir
   platform="$(detect_platform)"
 
-  pnpmTagVersion="latest"
-  # pnpmTagVersion="next-7"
+  # pnpmTagVersion="latest"
+  pnpmTagVersion="next-8"
 
     npmRegistry="https://registry.npmjs.org"
   # npmRegistry="https://registry.npmmirror.com"
   # npmRegistry="https://mirrors.cloud.tencent.com/npm"
   # npmRegistry="https://mirrors.huaweicloud.com/repository/npm"
 
-  githubDownloadProxy="https://github.com"
-  # githubDownloadProxy = "https://ghfast.top/https://github.com"
-  # githubDownloadProxy = "https://ghproxy.net/https://github.com"
+  # githubDownloadProxy="https://github.com"
+  # githubDownloadProxy="https://ghfast.top/https://github.com"
+  githubDownloadProxy="https://ghproxy.net/https://github.com"
 
   arch="$(detect_arch)" || abort "Sorry! pnpm currently only provides pre-built binaries for x86_64/arm64 architectures."
   if [ -z "${PNPM_VERSION}" ]; then
