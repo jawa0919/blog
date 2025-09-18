@@ -50,7 +50,9 @@ dart run
 dart run :aar
 dart run :framework
 
-$Env:http_proxy="http://127.0.0.1:10809";$Env:https_proxy="http://127.0.0.1:10809"
+$Env:http_proxy="http://127.0.0.1:7897";$Env:https_proxy="http://127.0.0.1:7897"
+export http_proxy=http://127.0.0.1:7897
+export https_proxy=http://127.0.0.1:7897
 flutter pub publish --dry-run -v
 flutter pub publish --server=https://pub.dev -v
 ```

@@ -21,7 +21,7 @@ npm create vite vite_lib_ts
 flutter doctor -v
 flutter clean
 flutter build ios-framework --no-profile --no-debug
-keytool -list -v -keystore keystore.jks 
+keytool -list -v -keystore meu6jia.jks 
 java --version
 gem --version
 gem source
