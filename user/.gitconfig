@@ -1,0 +1,18 @@
+[user]
+	name = jawa0919
+	email = jawa0919@163.com
+[credential]
+	helper = manager-core
+[http]
+	postBuffer = 524288000
+	version = HTTP/1.1
+[https]
+	postBuffer = 524288000
+[https "https://github.com"]
+	proxy = socks5://127.0.0.1:7897
+[credential "http://github.com"]
+	provider = generic
+[credential "https://gitee.com"]
+	provider = generic
+[core]
+	autocrlf = true

@@ -1,0 +1,95 @@
+// #distributionUrl=https\://services.gradle.org/distributions/gradle-8.0-all.zip
+// #distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.0-all.zip
+// #distributionUrl=https\://github.com/gradle/gradle-distributions/releases/download/v8.0.0/gradle-8.0-all.zip
+// #distributionUrl=https\://mirror.ghproxy.com/https\://github.com/gradle/gradle-distributions/releases/download/v8.0.0/gradle-8.0-all.zip
+// repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+// repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+// repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+
+allprojects {
+    repositories {
+        maven { setUrl("https://maven.aliyun.com/repository/public/") }
+        maven { setUrl("https://maven.aliyun.com/repository/google/") }
+        maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
+        maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+        maven { setUrl("https://dl.google.com/dl/android/maven2/") }
+        maven { setUrl("https://developer.huawei.com/repo/") }
+        maven { setUrl("https://jitpack.io/") }
+    }
+    buildscript {
+        repositories.all { repo ->
+            def displayName = repo.getDisplayName()
+            if (!displayName.contains("https:") && !displayName.contains("http:") && !displayName.contains("file:")) {
+                // println "init.gradle-buildscript remove repo-name (${displayName})"
+                // repositories.remove(repo)
+                println "init.gradle-buildscript init repo-name (${displayName})"
+            } else {
+                println "init.gradle-buildscript init repo (${displayName})"
+            }
+        }
+        repositories {
+            maven { setUrl("https://maven.aliyun.com/repository/public/") }
+            maven { setUrl("https://maven.aliyun.com/repository/google/") }
+            maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
+            maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+            maven { setUrl("https://dl.google.com/dl/android/maven2/") }
+            maven { setUrl("https://developer.huawei.com/repo/") }
+            maven { setUrl("https://jitpack.io/") }
+        }
+    }
+}
+
+// allprojects {
+//     repositories {
+//         try {
+//             def connect = new URL("https://mirrors.cloud.tencent.com").openConnection()
+//             connect.setRequestMethod("GET")
+//             connect.setConnectTimeout(500)
+//             connect.connect()
+//             def code = connect.getResponseCode()
+//             if (code == 200) {
+//                 maven { setUrl("https://maven.aliyun.com/repository/public/") }
+//                 maven { setUrl("https://maven.aliyun.com/repository/google/") }
+//                 maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
+//                 maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+//                 maven { setUrl("https://dl.google.com/dl/android/maven2/") }
+//                 maven { setUrl("https://developer.huawei.com/repo/") }
+//                 maven { setUrl("https://jitpack.io/") }
+//             }
+//         } catch (Exception e) {
+//
+//         }
+//     }
+//     buildscript {
+//         repositories.all { repo ->
+//             def displayName = repo.getDisplayName()
+//             if (!displayName.contains("https:") && !displayName.contains("http:") && !displayName.contains("file:")) {
+//                 // println "init.gradle-buildscript remove repo-name (${displayName})"
+//                 // repositories.remove(repo)
+//                 println "init.gradle-buildscript init repo-name (${displayName})"
+//             } else {
+//                 println "init.gradle-buildscript init repo (${displayName})"
+//             }
+//         }
+//         repositories {
+//             try {
+//                 def connect = new URL("https://mirrors.cloud.tencent.com").openConnection()
+//                 connect.setRequestMethod("GET")
+//                 connect.setConnectTimeout(500)
+//                 connect.connect()
+//                 def code = connect.getResponseCode()
+//                 if (code == 200) {
+//                     maven { setUrl("https://maven.aliyun.com/repository/public/") }
+//                     maven { setUrl("https://maven.aliyun.com/repository/google/") }
+//                     maven { setUrl("https://maven.aliyun.com/repository/gradle-plugin/") }
+//                     maven { setUrl("https://storage.flutter-io.cn/download.flutter.io/") }
+//                     maven { setUrl("https://dl.google.com/dl/android/maven2/") }
+//                     maven { setUrl("https://developer.huawei.com/repo/") }
+//                     maven { setUrl("https://jitpack.io/") }
+//                 }
+//             } catch (Exception e) {
+//
+//             }
+//         }
+//     }
+// }
