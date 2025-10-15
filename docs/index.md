@@ -18,11 +18,14 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: VSCode设置
+    details: VSCode设置
+    link: /other/vscode_settings
+  - title: Github的代理
+    details: Github的代理
+    link: /net_proxy/github_proxy
+  - title: Mac电脑设置
+    details: Mac电脑设置
+    link: /ios_oc_swift/mac_settings
 ---
 

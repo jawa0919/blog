@@ -1,0 +1,40 @@
+name: Deploy gh-pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Nodejs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build VitePress
+        run: npm run docs:build
+
+        # repos setting
+        # Setting-Actions-General
+        # Workflow permissions
+        # change to - Read and write permissions
+        # Save
+      - name: Deploy to GitHub Pages
+        uses: Cecilapp/GitHub-Pages-deploy@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          email: ${{ github.actor }}@users.noreply.github.com
+          build_dir: docs/.vitepress/dist/
+          branch: gh-pages
