@@ -135,3 +135,7 @@ docs/.vitepress/dist/
 
 pnpm-lock.yaml
 .DS_Store
+
+.dart_tool/
+/pubspec.lock
+build/

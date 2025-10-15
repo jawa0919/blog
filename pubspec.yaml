@@ -1,0 +1,7 @@
+name: blog
+description: jawa0919 blog
+version: 0.0.1
+repository: https://github.com/jawa0919/blog.git
+
+environment:
+  sdk: ^3.8.1
