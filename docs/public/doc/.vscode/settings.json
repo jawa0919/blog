@@ -1,0 +1,90 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "github.gitProtocol": "ssh",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "editor.guides.bracketPairs": true,
+    "editor.linkedEditing": true,
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "files.eol": "\n",
+    "files.associations": {
+        "*.arb": "json",
+        "*.config.json": "jsonc",
+        "*Config.json": "jsonc"
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/.github": true,
+        "**/.history": true,
+        "**/.nuxt": true,
+        "**/.output": true,
+        "**/.pnpm": true,
+        "**/.vscode": true,
+        "**/.yarn": true,
+        "**/bower_components": true,
+        "**/dist/**": true,
+        "**/logs": true,
+        "**/node_modules": true,
+        "**/out/**": true,
+        "**/tmp": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/yarn.lock": true
+    },
+    "cSpell.userWords": [
+        "ARGB",
+        "Cupertino",
+        "Encrypter",
+        "eruda",
+        "flavorizr",
+        "gitee",
+        "jawa",
+        "LTRB",
+        "Pinia",
+        "pnpm",
+        "scrcpy",
+        "swiper",
+        "vant",
+        "vite",
+        "vsync",
+        "writeln"
+    ],
+    "path-autocomplete.pathMappings": {
+        "@": "${workspace}/src"
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80,
+            100,
+            120
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+    },
+    "dart.flutterCreatePlatforms": [
+        "android",
+        "ios",
+        "web"
+    ],
+    "dart.flutterSdkPaths": [
+        "~/.sdkHome/FlutterSdk/flutter3_32_8",
+        "~/.sdkHome/FlutterSdk/flutter3_27_4",
+        "~/.sdkHome/FlutterSdk/flutter3_7_12",
+        "~/.sdkHome/FlutterSdk/flutter2_10_5",
+        "~/.sdkHome/FlutterSdk/flutter1.22.6"
+    ],
+    "dart.flutterCreateOrganization": "top.meu6jia",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.useLocalIp": true,
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "versionlens.pub.apiUrl": "https://pub-web.flutter-io.cn/api/packages",
+    "commentTranslate.source": "Bing"
+}
