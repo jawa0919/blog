@@ -1,0 +1,134 @@
+{
+	"add file header": {
+		"prefix": "adf",
+		"body": [
+			"$BLOCK_COMMENT_START",
+			" @FilePath     : ${RELATIVE_FILEPATH/[\\\\]/\\//g} ",
+			" @Date         : $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND ",
+			" @Author       : ${2:jawa0919 <jawa0919@163.com> } ",
+			" @Description  : $1 ",
+			"$BLOCK_COMMENT_END"
+		],
+		"description": "add file header"
+	},
+	"add file header keyboard": {
+		"prefix": "adfkb",
+		"body": [
+			"$BLOCK_COMMENT_START",
+			" ┌─────────────────────────────────────────────────────────────┐",
+			" │┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐│",
+			" ││Esc│!1 │@2 │#3 │\\$4 │%5 │^6 │&7 │*8 │(9 │)0 │_- │+= │|\\ │`~ ││",
+			" │├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴───┤│",
+			" ││ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{[ │}] │ BS  ││",
+			" │├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤│",
+			" ││ Ctrl │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│\" '│ Enter  ││",
+			" │├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────┬───┤│",
+			" ││ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│Shift │Fn ││",
+			" │└─────┬──┴┬──┴──┬┴───┴───┴───┴───┴───┴──┬┴───┴┬──┴┬─────┴───┘│",
+			" │      │Fn │ Alt │         Space         │ Alt │Win│   HHKB   │",
+			" │      └───┴─────┴───────────────────────┴─────┴───┘          │",
+			" └─────────────────────────────────────────────────────────────┘",
+			"$BLOCK_COMMENT_END"
+		],
+		"description": "add file header keyboard"
+	},
+	"add file header sakyamuni": {
+		"prefix": "adfskm",
+		"body": [
+			"$BLOCK_COMMENT_START",
+			"",
+			"                      _oo0oo_",
+			"                     o8888888o",
+			"                     88\" . \"88",
+			"                     (| -_- |)",
+			"                     0\\  =  /0",
+			"                   ___/`---'\\___",
+			"                 .' \\|     |// '.",
+			"                / \\\\|||  :  |||// \\",
+			"               / _||||| -:- |||||- \\",
+			"              |   | \\\\\\  - /// |   |",
+			"              | \\_|  ''\\---/''  |_/ |",
+			"              \\  .-\\__  '-'  ___/-. /",
+			"            ___'. .'  /--.--\\  `. .'___",
+			"         .\"\" '<  `.___\\_<|>_/___.' >' \"\".",
+			"        | | :  `- \\`.;`\\\\ _ /`;.`/ - ` : | |",
+			"        \\  \\ `_.   \\_ __\\ /__ _/   .-` /  /",
+			"    =====`-.____`.___ \\_____/___.-`___.-'=====    ",
+			"                      `=---='",
+			"",
+			"    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~      ",
+			"                                                     ",
+			"",
+			"$BLOCK_COMMENT_END"
+		],
+		"description": "add file header sakyamuni"
+	},
+	"todo snippet": {
+		"prefix": "todo",
+		"body": [
+			"$LINE_COMMENT TODO $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $1"
+		],
+		"description": "new TODO snippet"
+	},
+	"fixme snippet": {
+		"prefix": "fixme",
+		"body": [
+			"$LINE_COMMENT FIXME $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND $1"
+		],
+		"description": "new FIXME snippet"
+	},
+	"console log with filename lineNumber": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "log",
+		"body": [
+			"console.log($1,'$TM_FILENAME~$TM_LINE_NUMBER');"
+		],
+		"description": "console log snippet"
+	},
+	"debugPrint with filename lineNumber": {
+		"scope": "dart",
+		"prefix": "logd",
+		"body": [
+			"debugPrint('$TM_FILENAME~$TM_LINE_NUMBER: $$1');"
+		],
+		"description": "debugPrint snippet"
+	},
+	"debugPrint.error with filename lineNumber": {
+		"scope": "dart",
+		"prefix": "loge",
+		"body": [
+			"debugPrint('$TM_FILENAME~$TM_LINE_NUMBER.error: $$1');"
+		],
+		"description": "debugPrint.error snippet"
+	},
+	"newPromise snippet": {
+		"scope": "dart",
+		"prefix": "newPromise",
+		"body": [
+			"Future.sync(() async {",
+			"  $1",
+			"});",
+		],
+		"description": "dart newPromise snippet"
+	},
+	"setTimeout snippet": {
+		"scope": "dart",
+		"prefix": "setTimeout",
+		"body": [
+			"Future.delayed(const Duration(milliseconds: ${1:1000}), () {",
+			"  $2",
+			"});",
+		],
+		"description": "dart setTimeout snippet"
+	},
+	"setInterval snippet": {
+		"scope": "dart",
+		"prefix": "setInterval",
+		"body": [
+			"${3:final _timer = }Timer.periodic(const Duration(milliseconds: ${1:1000}), (timer) {",
+			"  $2",
+			"});",
+		],
+		"description": "dart setInterval snippet"
+	}
+}

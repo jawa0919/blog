@@ -1,0 +1,27 @@
+{
+    "recommendations": [
+        "kylinideteam.gitlens",
+        "bradlc.vscode-tailwindcss",
+        "christian-kohler.npm-intellisense",
+        "codeinchinese.englishchinesedictionary",
+        "dart-code.dart-code",
+        "dart-code.flutter",
+        "dbaeumer.vscode-eslint",
+        "gruntfuggly.todo-tree",
+        "humao.rest-client",
+        "intellsmi.comment-translate",
+        "ionutvmi.path-autocomplete",
+        "jawa0919.adb-helper",
+        "mhutchie.git-graph",
+        "ms-ceintl.vscode-language-pack-zh-hans",
+        "pflannery.vscode-versionlens",
+        "redhat.vscode-xml",
+        "redhat.vscode-yaml",
+        "redjue.git-commit-plugin",
+        "ritwickdey.liveserver",
+        "streetsidesoftware.code-spell-checker",
+        "vscode-icons-team.vscode-icons",
+        "vue.volar",
+        "xyz.local-history",
+    ]
+}
