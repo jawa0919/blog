@@ -6,13 +6,13 @@ Get-ChildItem Env:
 # 这个路径一般是C:\Users\Administrator\AppData\Local
 # $LAP = [Environment]::GetEnvironmentVariable('LOCALAPPDATA')
 # 这个路径一般是C:\Users\Administrator
-# $USP = [Environment]::GetEnvironmentVariable('USERPROFILE')
+$USP = [Environment]::GetEnvironmentVariable('USERPROFILE')
 $sdkHome = "D:\.sdkHome"
 $sdkCache = "D:\.sdkCache"
 # Java
 Write-Host "Set Java Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('JAVA_HOME', "C:\Program Files\Android\Android Studio\jbr", 'User')
-# [Environment]::SetEnvironmentVariable('JAVA_HOME', $sdkHome + "\.jdks\" , 'User')
+# [Environment]::SetEnvironmentVariable('JAVA_HOME', $USP + "\.jdks\" , 'User')
 # Android
 Write-Host "Set Android Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('ANDROID_HOME', $sdkHome + "\AndroidSdk" , 'User')

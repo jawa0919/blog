@@ -23,10 +23,11 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"
 # export GRADLE_USER_HOME="$HOME/.sdkCache/.gradle"
 # android end
 # flutter
-export FLUTTER_ROOT="$HOME/.sdkHome/FlutterSdk/flutter3_27_4"
+# export FLUTTER_SDK_ROOT="$HOME/.sdkHome/FlutterSdk/flutter3_27_4"
+export FLUTTER_SDK_ROOT="$HOME/.sdkHome/FlutterSdk/flutter3_32_8"
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
-export PATH="$PATH:$FLUTTER_ROOT/bin"
+export PATH="$PATH:$FLUTTER_SDK_ROOT/bin"
 # export PUB_CACHE="$HOME/.sdkCache/.pub_cache"
 # export PATH="$PATH:$PUB_CACHE/bin"
 # flutter end
