@@ -8,6 +8,13 @@ USB 数据线信任重复断连命令修复
 sudo killall -STOP -c usbd
 ```
 
+iproxy命令修复
+
+```shell
+sudo xattr -d com.apple.quarantine /Users/lx/.sdkHome/FlutterSdk/flutter3_35_7/bin/cache/artifacts/libusbmuxd/iproxy
+
+```
+
 ## 环境变量
 
 ```shell
