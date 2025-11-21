@@ -96,11 +96,11 @@ if ('' -ne $githubDownloadProxy) {
 }
 Write-Host "Download $repoUser-$repoName-$version from $githubDownload" -ForegroundColor Green
 ########################################################################################################################
-$releasesFlieName = "$repoName.$version.Portable.$architecture"
-$releasesFlieNameType = "zip"
+$releasesFileName = "$repoName.$version.Portable.$architecture"
+$releasesFileNameType = "zip"
 ########################################################################################################################
-Write-Host "releasesFlie:$releasesFlieName.$releasesFlieNameType" -ForegroundColor Green
-$archiveUrl = "$githubDownload/$repoUser/$repoName/releases/download/$version/$releasesFlieName.$releasesFlieNameType"
+Write-Host "releasesFile:$releasesFileName.$releasesFileNameType" -ForegroundColor Green
+$archiveUrl = "$githubDownload/$repoUser/$repoName/releases/download/$version/$releasesFileName.$releasesFileNameType"
 Write-Host "archiveUrl: '$archiveUrl'" -ForegroundColor Green
 ########################################################################################################################
 Write-Host "Downloading..." -ForegroundColor Green
@@ -125,7 +125,7 @@ Write-Host "Install $repoName Success" -ForegroundColor Green
 # # 下载完成后，添加到环境变量
 # $softwarePath = $softwareFolder
 # # 如果压缩文件夹
-# $softwarePath = Join-Path $softwareFolder $releasesFlieName
+# $softwarePath = Join-Path $softwareFolder $releasesFileName
 # Write-Host "add Path '$softwarePath'" -ForegroundColor Green
 # $oldUserPath = (Get-Item -Path "HKCU:\Environment").GetValue("Path", "", [Microsoft.Win32.RegistryValueOptions]::DoNotExpandEnvironmentNames)
 # if ($oldUserPath.EndsWith(";")) {
