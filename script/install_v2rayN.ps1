@@ -97,11 +97,11 @@ if ('' -ne $githubDownloadProxy) {
 }
 Write-Host "Download $repoUser-$repoName-$version from $githubDownload" -ForegroundColor Green
 ########################################################################################################################
-$releasesFlieName = "zz_v2rayN-With-Core-SelfContained"
-$releasesFlieNameType = "7z"
+$releasesFileName = "v2rayN-windows-64-SelfContained"
+$releasesFileNameType = "zip"
 ########################################################################################################################
-Write-Host "releasesFlie:$releasesFlieName.$releasesFlieNameType" -ForegroundColor Green
-$archiveUrl = "$githubDownload/$repoUser/$repoName/releases/download/$version/$releasesFlieName.$releasesFlieNameType"
+Write-Host "releasesFile:$releasesFileName.$releasesFileNameType" -ForegroundColor Green
+$archiveUrl = "$githubDownload/$repoUser/$repoName/releases/download/$version/$releasesFileName.$releasesFileNameType"
 Write-Host "archiveUrl: '$archiveUrl'" -ForegroundColor Green
 ########################################################################################################################
 Write-Host "Downloading..." -ForegroundColor Green
