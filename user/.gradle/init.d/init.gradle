@@ -2,6 +2,7 @@
 // #distributionUrl=https\://mirrors.cloud.tencent.com/gradle/gradle-8.0-all.zip
 // #distributionUrl=https\://github.com/gradle/gradle-distributions/releases/download/v8.0.0/gradle-8.0-all.zip
 // #distributionUrl=https\://mirror.ghproxy.com/https\://github.com/gradle/gradle-distributions/releases/download/v8.0.0/gradle-8.0-all.zip
+// https://github.com/gradle/gradle-distributions/releases/tag/v8.0.0
 // repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
 // repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
 // repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
