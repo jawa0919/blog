@@ -13,6 +13,7 @@ iproxy命令修复
 ```shell
 sudo xattr -d com.apple.quarantine /Users/lx/.sdkHome/FlutterSdk/flutter3_35_7/bin/cache/artifacts/libusbmuxd/iproxy
 
+xattr -cr /Applications/v2rayN.app
 ```
 
 ## 环境变量
