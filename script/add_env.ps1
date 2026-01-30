@@ -7,7 +7,7 @@ Get-ChildItem Env:
 # $LAP = [Environment]::GetEnvironmentVariable('LOCALAPPDATA')
 # 这个路径一般是C:\Users\Administrator
 $USP = [Environment]::GetEnvironmentVariable('USERPROFILE')
-$sdkHome = "D:\.sdkHome"
+$sdkHome = "D:\sdkHome"
 # Java
 Write-Host "Set Java Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('JAVA_HOME', "C:\Program Files\Android\Android Studio\jbr", 'User')
@@ -21,7 +21,7 @@ Write-Host "Set Android Environment" -ForegroundColor Green
 Write-Host "Set Flutter Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://pub.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://storage.flutter-io.cn" , 'User')
-[Environment]::SetEnvironmentVariable('FLUTTER_SDK_ROOT', $sdkHome + "\FlutterSdk\flutter3_27_4" , 'User')
+[Environment]::SetEnvironmentVariable('FLUTTER_SDK_ROOT', $sdkHome + "\FlutterSdk\flutter" , 'User')
 [Environment]::SetEnvironmentVariable('PUB_CACHE', $sdkHome + "\.pub-cache" , 'User')
 # Path
 Write-Host "Add Path" -ForegroundColor Green

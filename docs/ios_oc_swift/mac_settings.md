@@ -11,8 +11,13 @@ sudo killall -STOP -c usbd
 iproxy命令修复
 
 ```shell
-sudo xattr -d com.apple.quarantine /Users/lx/.sdkHome/FlutterSdk/flutter3_35_7/bin/cache/artifacts/libusbmuxd/iproxy
+sudo xattr -d com.apple.quarantine /Users/lx/sdkHome/FlutterSdk/flutter/bin/cache/artifacts/libusbmuxd/iproxy
 
+```
+
+本地签名认证运行
+
+```shell
 xattr -cr /Applications/v2rayN.app
 ```
 
@@ -28,15 +33,15 @@ export PATH="$PATH:$JAVA_HOME/bin"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"
-# export GRADLE_USER_HOME="$HOME/.sdkCache/.gradle"
+# export GRADLE_USER_HOME="$HOME/sdkHome/.gradle"
 # android end
 # flutter
-# export FLUTTER_SDK_ROOT="$HOME/.sdkHome/FlutterSdk/flutter3_27_4"
-export FLUTTER_SDK_ROOT="$HOME/.sdkHome/FlutterSdk/flutter3_32_8"
+# export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter3_35_5"
+export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter"
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
 export PATH="$PATH:$FLUTTER_SDK_ROOT/bin"
-# export PUB_CACHE="$HOME/.sdkCache/.pub_cache"
+# export PUB_CACHE="$HOME/sdkHome/.pub_cache"
 # export PATH="$PATH:$PUB_CACHE/bin"
 # flutter end
 # pnpm

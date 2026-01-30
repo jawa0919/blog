@@ -5,9 +5,9 @@ git clone ssh://git@ssh.github.com:443/jawa0919/blog.git
 git clone https://github.com/jawa0919/blog.git
 git clone https://githubfast.com/jawa0919/blog.git
 pnpm --version
-pnpm env use --global 20
+pnpm env use --global 22
 node --version
-npm install -g @pnpm/exe@7.33.7
+npm install -g @pnpm/exe@10
 npm outdated -g
 npm install -g @vue/cli@latest
 npm install -g vite@latest
@@ -43,6 +43,6 @@ flutter create -t plugin --platforms android,ios wj_server
 flutter create -t package wj_utils
 flutter doctor -v
 flutter pub run pigeon --input pigeon/message.dart
-flutter create --org top.wiz --platforms android,ios flutter_wiz_app
+flutter create --org top.men6jia -t plugin --platforms android,ios -a java -i objc plg
 pod install --verbose
 flutter pub run flutter_flavorizr

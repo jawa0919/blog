@@ -85,9 +85,9 @@ download_and_install() {
   platform="$(detect_platform)"
 
   # pnpmTagVersion="latest"
-  pnpmTagVersion="next-8"
+  pnpmTagVersion="next-10"
 
-    npmRegistry="https://registry.npmjs.org"
+  npmRegistry="https://registry.npmjs.org"
   # npmRegistry="https://registry.npmmirror.com"
   # npmRegistry="https://mirrors.cloud.tencent.com/npm"
   # npmRegistry="https://mirrors.huaweicloud.com/repository/npm"

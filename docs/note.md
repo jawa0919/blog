@@ -7,7 +7,7 @@ set-ExecutionPolicy RemoteSigned
 get-ExecutionPolicy
 
 pnpm --version
-pnpm env use --global 20
+pnpm env use --global 22
 node --version
 npm --version
 npm install -g @pnpm/exe@10

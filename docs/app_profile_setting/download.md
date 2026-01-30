@@ -25,6 +25,7 @@ https://fastly.jsdelivr.net/gh/zhangkaiitugithub/passcro@main/speednodes.yaml
 ## v2ray 订阅
 
 ```shell
+https://fastly.jsdelivr.net/gh/HakurouKen/free-node@main/public
 https://proxy.v2gh.com/https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
 https://proxy.v2gh.com/https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
 ```
