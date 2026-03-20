@@ -36,10 +36,10 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"
 # export GRADLE_USER_HOME="$HOME/sdkHome/.gradle"
 # android end
 # flutter
-# export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter3_35_5"
-export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter"
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
+export FLUTTER_GIT_URL="https://gitee.com/mirrors/Flutter.git"
+export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter"
 export PATH="$PATH:$FLUTTER_SDK_ROOT/bin"
 # export PUB_CACHE="$HOME/sdkHome/.pub_cache"
 # export PATH="$PATH:$PUB_CACHE/bin"

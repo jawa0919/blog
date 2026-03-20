@@ -21,6 +21,7 @@ Write-Host "Set Android Environment" -ForegroundColor Green
 Write-Host "Set Flutter Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://pub.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://storage.flutter-io.cn" , 'User')
+[Environment]::SetEnvironmentVariable('FLUTTER_GIT_URL', "https://gitee.com/mirrors/Flutter.git" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_SDK_ROOT', $sdkHome + "\FlutterSdk\flutter" , 'User')
 [Environment]::SetEnvironmentVariable('PUB_CACHE', $sdkHome + "\.pub-cache" , 'User')
 # Path
