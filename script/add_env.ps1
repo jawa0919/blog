@@ -11,7 +11,9 @@ $sdkHome = "D:\sdkHome"
 # Java
 Write-Host "Set Java Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('JAVA_HOME', "C:\Program Files\Android\Android Studio\jbr", 'User')
-# [Environment]::SetEnvironmentVariable('JAVA_HOME', $USP + "\.jdks\" , 'User')
+# [Environment]::SetEnvironmentVariable('JAVA_HOME', $USP + "\.jdks\azul-1.8.0_480" , 'User')
+# [Environment]::SetEnvironmentVariable('JAVA_HOME', $USP + "\.jdks\azul-11.0.30" , 'User')
+# [Environment]::SetEnvironmentVariable('JAVA_HOME', $USP + "\.jdks\azul-17.0.18" , 'User')
 # Android
 Write-Host "Set Android Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('ANDROID_HOME', $sdkHome + "\AndroidSdk" , 'User')
@@ -22,7 +24,7 @@ Write-Host "Set Flutter Environment" -ForegroundColor Green
 [Environment]::SetEnvironmentVariable('PUB_HOSTED_URL', "https://pub.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_STORAGE_BASE_URL', "https://storage.flutter-io.cn" , 'User')
 [Environment]::SetEnvironmentVariable('FLUTTER_GIT_URL', "https://gitee.com/mirrors/Flutter.git" , 'User')
-[Environment]::SetEnvironmentVariable('FLUTTER_SDK_ROOT', $sdkHome + "\FlutterSdk\flutter" , 'User')
+[Environment]::SetEnvironmentVariable('FLUTTER_SDK_ROOT', $sdkHome + "\FlutterSdk\flutter3_38_10" , 'User')
 [Environment]::SetEnvironmentVariable('PUB_CACHE', $sdkHome + "\.pub-cache" , 'User')
 # Path
 Write-Host "Add Path" -ForegroundColor Green

@@ -26,7 +26,9 @@ xattr -cr /Applications/v2rayN.app
 ```shell
 # java
 export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home"
-# export JAVA_HOME="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home"
+# export JAVA_HOME="~/Library/Java/JavaVirtualMachines/azul-17.0.18/Contents/Home"
+# export JAVA_HOME="~/Library/Java/JavaVirtualMachines/azul-11.0.30/Contents/Home"
+# export JAVA_HOME="~/Library/Java/JavaVirtualMachines/azul-1.8.0_480/Contents/Home"
 export PATH="$PATH:$JAVA_HOME/bin"
 # java end
 # android
@@ -39,7 +41,7 @@ export PATH="$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools"
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
 export FLUTTER_GIT_URL="https://gitee.com/mirrors/Flutter.git"
-export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter"
+export FLUTTER_SDK_ROOT="$HOME/sdkHome/FlutterSdk/flutter3_38_10"
 export PATH="$PATH:$FLUTTER_SDK_ROOT/bin"
 # export PUB_CACHE="$HOME/sdkHome/.pub_cache"
 # export PATH="$PATH:$PUB_CACHE/bin"
