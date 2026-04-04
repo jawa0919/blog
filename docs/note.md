@@ -48,9 +48,9 @@ flutter build ios-framework
 dart run
 dart run :hi
 
-$Env:http_proxy="http://127.0.0.1:7897";$Env:https_proxy="http://127.0.0.1:7897"
-export http_proxy=http://127.0.0.1:7897
-export https_proxy=http://127.0.0.1:7897
+$Env:http_proxy="http://127.0.0.1:10808";$Env:https_proxy="http://127.0.0.1:10808"
+export http_proxy=http://127.0.0.1:10808
+export https_proxy=http://127.0.0.1:10808
 flutter pub publish --dry-run -v
 flutter pub publish --server=https://pub.dev -v
 ```

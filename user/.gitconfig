@@ -9,7 +9,7 @@
 [https]
 	postBuffer = 524288000
 [https "https://github.com"]
-	proxy = socks5://127.0.0.1:7897
+	proxy = socks5://127.0.0.1:10808
 [credential "http://github.com"]
 	provider = generic
 [credential "https://gitee.com"]
