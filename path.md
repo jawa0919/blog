@@ -22,6 +22,8 @@
 
 [.zshrc](./../.zshrc)
 
+[.zshrc](./../.zprofile)
+
 [bash_profile](./../.bash_profile)
 
 [dart-pub-credentials.json](./../Library/Application%20Support/dart/pub-credentials.json)
