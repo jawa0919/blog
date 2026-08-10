@@ -6,6 +6,8 @@
 
 [ssh-id_rsa](./../.ssh/id_rsa)
 
+[ssh-config](./../.ssh/config)
+
 [git-gitconfig](./../.gitconfig)
 
 [npm-npmrc](./../.npmrc)
